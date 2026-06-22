@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Platform</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            background:white;
+            width:500px;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 0 15px rgba(0,0,0,.1);
+            text-align:center;
+        }
+
+        h1{
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#555;
+            margin-bottom:20px;
+        }
+
+        .status{
+            background:#e8f5e9;
+            color:#2e7d32;
+            padding:10px;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+
+        button{
+            padding:12px 20px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .btn-primary{
+            background:#2563eb;
+            color:white;
+        }
+
+        .btn-primary:hover{
+            opacity:0.9;
+        }
+
+        #result{
+            margin-top:20px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Chatbot Platform</h1>
+
+    <p>
+        Demo Frontend chạy trên Vercel
+    </p>
+
+    <div class="status">
+        Frontend hoạt động bình thường
+    </div>
+
+    <button class="btn-primary" onclick="testApi()">
+        Test API
+    </button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+function testApi(){
+    document.getElementById("result").innerText =
+        "Frontend JavaScript đang hoạt động.";
+}
+</script>
+
+</body>
+</html>
